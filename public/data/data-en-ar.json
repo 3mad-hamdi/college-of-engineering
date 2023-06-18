@@ -1,0 +1,50 @@
+{
+	"departments": [
+		{
+			"id": 0,
+			"title": {
+				"ar": "قسم علوم الحاسب  ",
+				"en": "Computer Science Department"
+			},
+			"name": "ComputerSceince",
+			"bio": {
+				"en": "It is the department that specializes in computer science and how it works and programming and making robots",
+				"ar": "وهو القسم الذي يختص في علوم الحاسوب وكيف يعمل والبرمجة وصنع الروبوت  "
+			},
+			"illustrations": "../images/illustrations-0.png",
+			"img_bg": "../images/background-0.jpg",
+			"subjects": {
+				"en": "Algorithm science, Arduino, Artificial intelligence, Computer principles, Computer history, Office programs, Programming languages such as: HTML, CSS, JAVASCRIPT, JAVA PYTHON, CCNA, C, C ++, C # , ......... etc.,",
+				"ar": "علم الخورزميات ، الاردوينو ،الذكاء الاصطناعي ،مبادئ الكمبيوتر ، تاريخ الكمبيوتر ,برامج اوفيس المكتبية ،لغات البرمجة مثل :HTML ,CSS ,JAVASCRIPT ,JAVA PYTHON ,CCNA ,C ,C++ ,C# ,.........الخ  ،"
+			},
+			"details": "It is computer science or computing or computer science Computer science a scientific and practical approach that specializes in computing and its applications, in addition to being a kind of methodological studies that aim to study feasibility feasibility, structure structure, and many terms and phrases expression and mechanization mechanization and algorithms methodical procedures, which aim to store information and process it, then communicate and present it with the aim of reaching the required information. To master computer science, you must study computer software and hardware in scientific ways, specialize in the world of computers, and theories of computing. Designing computer systems.",
+			"doctor": [
+				{
+					"id": 0,
+					"name": "Dr. Emad Hamdi",
+					"bio": "PhD in Computer Science and Modern Programming Languages ​​and he is currently Dean of the Faculty of Engineering.",
+					"img": "../images/manger.jpg"
+				},
+				{
+					"id": 1,
+					"name": "Dr. Hossam Ahmed",
+					"bio": "PhD in Modern Technology Sciences, Computers and Information",
+					"img": "../images/doc-hossam.jpg"
+				},
+				{
+					"id": 2,
+					"name": "Dr. Emad Ahmed",
+					"bio": "PhD in office programs and making interactive office programs and security systems.",
+					"img": "../images/doc-emad.jpg"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"title": "Marine Engineering and Naval Architecture Department",
+			"name": "Ships",
+			"bio": "It is the department that specializes in building ships and establishing them and the mechanical bodies in them",
+			"illustrations": "../images/illustrations-1.png",
+			"img_bg": "../images/background-1.jpg",
+			"subjects": "Drawing machines and ships' machines, naval architecture, structural analysis of ships, drawing ships and their machines, fluid mechanics, shipbuilding
+		}
