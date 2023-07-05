@@ -5,7 +5,7 @@ import Scores from "./Scores";
 import Sections from "./Sections";
 
 import SliderHome from "./SliderHome";
-function Home(props) {
+function Home() {
   useEffect(()=>{
     window.scrollTo({
       top: 0,
@@ -14,11 +14,10 @@ function Home(props) {
   },[])
  return(
  <>
-   <SliderHome sectionsInfo={props.departmentsInfo} />
-   <Scores scoresData={props.scoresData}/>
-   
-   <About images={props.departmentsInfo} aboutData={props.aboutData} />
-   <Sections sectionsInfo={props.departmentsInfo}/>
+   <SliderHome/>
+   <Scores/>
+   <About  />
+   <Sections />
    <Contant/>
    </>
  )}   

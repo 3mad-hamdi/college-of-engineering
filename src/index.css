@@ -39,14 +39,15 @@ html::-webkit-scrollbar-thumb {
   position: relative;
   color: black;
 }
-.heading-title::after {
+.heading-title::before {
   content: "";
   position: absolute;
   width: 60%;
   height: 4px;
+  /* text-align: center; */
   left: 50%;
-  bottom: 0;
-  top: 48px;
+  /* bottom: 0; */
+  top: 150%;
   transform: translateX(-50%);
   transition: all 0.5s ease;
   background-color: var(--main-color);
@@ -227,7 +228,6 @@ html::-webkit-scrollbar-thumb {
     font-size: 0.9rem !important;
   }
   .con-icon:hover {
-    font-size: 0.9rem !important;
     word-spacing: 1px;
   }
   .slider-content .content a {

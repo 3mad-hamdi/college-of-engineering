@@ -81,7 +81,7 @@ function Footer() {
           </h5>
           <a
             href="https://aboukir-institutes.edu.eg"
-            target="blank"
+            target=" _blank"
             className=" text-dang fs-5 fw-lighter mb-0 pb-0"
           >
             لدي كلية الهندسة  &copy;

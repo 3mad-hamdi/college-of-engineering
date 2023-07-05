@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { departmentsContext } from "../DataStore/Store";
 
 function Navbar(props) {
   // icon.onclick(function() {
@@ -10,6 +11,8 @@ function Navbar(props) {
   //   // icon.classList.add('fa-bars');
   //   icon.classList.toggle("fa-gear");
   // };
+  let {dataDepartments}= useContext(departmentsContext)
+
   return (
     <nav className="navbar navbar-expand-lg w-100 sticky-top  ">
       <div className="container">
@@ -59,7 +62,7 @@ function Navbar(props) {
                 <i className="fa-solid fa-caret-down me-1"></i>
               </Link>
               <ul className="dropdown-menu text-center">
-                {props.departmentsTitles.map((link, i) => (
+                {dataDepartments.map((link, i) => (
                   <li key={i} className="nav-item-dropdown">
                     <Link
                       className="link"

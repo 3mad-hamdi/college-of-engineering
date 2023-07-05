@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { departmentsContext } from "../DataStore/Store";
 
-function Sections(props) {
+function Sections() {
+  let {dataDepartments}= useContext(departmentsContext)
+
   return (
     <div id="sections" className="sections mt-5">
       <div className="section-title">
@@ -9,7 +12,7 @@ function Sections(props) {
       </div>
       <div className="container">
         <div className="row g-3 ">
-          {props.sectionsInfo.map((section, i) => (
+          {dataDepartments.map((section, i) => (
             <div key={i} className="col-md-6 col-lg-4 col-xl-3 section-cards">
               <div className="card border-primary text-center">
                 <img

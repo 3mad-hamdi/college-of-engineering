@@ -1,5 +1,8 @@
-import React ,{useEffect}from "react";
-function Doctors(props) {
+import React ,{useContext, useEffect}from "react";
+import { Link } from "react-router-dom";
+import { departmentsContext } from "../DataStore/Store";
+function Doctors() {
+  let {dataDoctor}= useContext(departmentsContext)
   useEffect (()=>{
 		window.scrollTo({
 			top:0,
@@ -13,7 +16,7 @@ function Doctors(props) {
         <h3 className="heading-title">أعضاء هيئة التدريس </h3>
       </div>
       <div className="row g-3 mb-5">
-        {props.doctorInfo.map((doctor, i) =><div key={i} className="col-md-6 col-lg-4 col-xl-3">
+        {dataDoctor.map((doctor, i) =><div key={i} className="col-md-6 col-lg-4 col-xl-3">
             <div className="card">
             <img
                   src={doctor.img}
@@ -23,9 +26,9 @@ function Doctors(props) {
               <div className="card-body text-center">
                 
                 <h4 className="card-title "> {doctor.name}</h4>
-                {/* <p className="card-text">{doctor.bio}</p> */}
+                <p className="card-text">{doctor.bio}</p>
                 
-                {/* {doctor.sub? <Link to={`${doctor.id}`} className="btn btn-outline-primary text-dark fw-bold" title={doctor.title}>قراءة المزيد</Link> :""} */}
+                {doctor.sub? <Link to={`${doctor.id}`} className="btn btn-outline-primary text-dark fw-bold" title={doctor.title}>قراءة المزيد</Link> :""}
               </div>
             </div>
           </div>

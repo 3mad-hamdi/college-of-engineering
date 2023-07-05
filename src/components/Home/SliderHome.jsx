@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'react-router-dom';
+import { departmentsContext } from '../DataStore/Store';
 
 
-function SliderHome(props) {
+function SliderHome() {
+	let {dataDepartments}= useContext(departmentsContext)
+
   return (
 	 <Carousel className='slider-height'>
-	{props.sectionsInfo.map((slider, i) => (
+	{dataDepartments.map((slider, i) => (
 		<Carousel.Item key={i}>
 		<img
 		  className="d-block w-100 img-slider"

@@ -8,15 +8,17 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
 import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
 import './index.css';
 import '../node_modules/@fortawesome/fontawesome-free/js/all'
+import DepartmentsContextProvider from './components/DataStore/Store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-
+<DepartmentsContextProvider>
   <React.StrictMode>
     <BrowserRouter>
     <App/>
     </BrowserRouter>
   </React.StrictMode>
+  </DepartmentsContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
